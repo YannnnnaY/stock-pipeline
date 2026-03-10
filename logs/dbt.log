@@ -1,0 +1,31 @@
+[0m01:37:12.662492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101583b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108aab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108aa7e0>]}
+
+
+============================== 01:37:12.667367 | d7720962-c368-417c-90f3-023e5eee032b ==============================
+[0m01:37:12.667367 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:37:12.667809 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'invocation_command': 'dbt init stock_dbt', 'debug': 'False', 'no_print': 'None', 'printer_width': '80', 'write_json': 'True', 'profiles_dir': '/Users/bliu/.dbt', 'partial_parse': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'introspect': 'True', 'warn_error': 'None', 'version_check': 'True', 'log_path': 'logs', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'fail_fast': 'False', 'empty': 'None', 'static_parser': 'True'}
+[0m01:37:12.678919 [info ] [MainThread]: Creating dbt configuration folder at /Users/bliu/.dbt
+[0m01:37:12.680053 [debug] [MainThread]: Starter project path: /Users/bliu/LearningProjects/stock-pipeline/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m01:37:12.684681 [info ] [MainThread]: 
+Your new dbt project "stock_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:37:12.684922 [info ] [MainThread]: Setting up your profile.
+[0m01:40:07.371711 [info ] [MainThread]: Profile stock_dbt written to /Users/bliu/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m01:40:07.385989 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 172.74734, "process_in_blocks": "0", "process_kernel_time": 0.286339, "process_mem_max_rss": "109731840", "process_out_blocks": "0", "process_user_time": 1.086566}
+[0m01:40:07.386583 [debug] [MainThread]: Command `dbt init` succeeded at 01:40:07.386421 after 172.75 seconds
+[0m01:40:07.387058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105becf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103ece30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11083f0b0>]}
+[0m01:40:07.387507 [debug] [MainThread]: Flushing usage events
+[0m01:40:07.604178 [debug] [MainThread]: An error was encountered while trying to flush usage events
