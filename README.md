@@ -146,7 +146,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🧪 Data Quality Tests
+## Data Quality Tests
 
 dbt tests cover all key models:
 - `not_null` checks on all critical columns
