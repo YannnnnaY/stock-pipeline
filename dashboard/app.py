@@ -59,13 +59,16 @@ st.markdown("Normalized to 100 at start date — shows cumulative return relativ
 
 @st.cache_data
 def load_benchmark():
-    conn = duckdb.connect(DB_PATH, read_only=True)
+    # for local duckdb
+    """conn = duckdb.connect(DB_PATH, read_only=True)
     df = conn.execute("""
         SELECT ticker, date, close
         FROM fct_stock_metrics
         ORDER BY ticker, date
     """).df()
-    conn.close()
+    conn.close()"""
+    # for streamlit app deploy
+    df = pd.read_csv("data/exports/fct_stock_metrics.csv")
     return df
 
 df_bench = load_benchmark()
