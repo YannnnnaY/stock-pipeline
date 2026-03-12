@@ -7,14 +7,17 @@ import plotly.graph_objects as go
 DB_PATH = "/Users/bliu/LearningProjects/stock-pipeline/stock_data.duckdb"
 
 st.set_page_config(page_title="Stock Analytics Dashboard", layout="wide")
-st.title("📈 Stock Market Analytics Pipeline")
+st.title("Stock Market Analytics Pipeline")
 st.markdown("Built with Python, Airflow, dbt, and DuckDB")
 
 @st.cache_data
 def load_data():
-    conn = duckdb.connect(DB_PATH, read_only=True)
+    # for local duckdb
+    """conn = duckdb.connect(DB_PATH, read_only=True)
     df = conn.execute("SELECT * FROM fct_stock_metrics ORDER BY date").df()
-    conn.close()
+    conn.close()"""
+    # for streamlit app deploy
+    df = pd.read_csv("data/exports/fct_stock_metrics.csv")
     return df
 
 df = load_data()
