@@ -4,6 +4,9 @@ An end-to-end data engineering and analytics project that ingests real-time stoc
 
 Built to demonstrate production-grade analytics engineering skills including pipeline orchestration, data modeling, testing, and visualization.
 
+## Live Demo
+[View Live Dashboard](https://stock-pipeline-hna6sy8aapcqf6jetnska4.streamlit.app)
+
 ---
 
 ## Architecture
